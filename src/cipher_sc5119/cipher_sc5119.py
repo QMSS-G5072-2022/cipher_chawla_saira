@@ -1,9 +1,10 @@
 ## importing necessary libraries 
 
 def cipher(text, shift, encrypt=True):
-    '''
-    function encrypts or decrypts a string based in the shift valye
-    takes in 3 parameters: a string, an integer to shift the string by, and a boolean that stands for encrypt or decrypt
+    """
+    function encrypts or decrypts a string based in the shift value
+    takes in 3 parameters: a string that will be encrypted or decrypted, an integer to shift the string by, and a boolean that stands for encrypt or decrypt
+    returns a string that has been shifted 
     example 1:
         text = dog
         shift = 2
@@ -14,7 +15,7 @@ def cipher(text, shift, encrypt=True):
         shift = 2
         encrypt = False
             returns -> dog
-    '''
+    """
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
     for c in text:
